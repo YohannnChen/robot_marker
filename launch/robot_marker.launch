@@ -1,0 +1,12 @@
+
+
+<!-- -->
+
+<launch>
+	
+	
+	<node name="pose_marker" pkg="robot_marker" type="cube_shape" args="$(find mr_stage)/src/cube_shape.cpp">           
+	</node>
+
+
+</launch>
