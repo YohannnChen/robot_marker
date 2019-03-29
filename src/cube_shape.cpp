@@ -30,8 +30,8 @@ void Callback(const geometry_msgs::PolygonStampedConstPtr& msg)
 
   marker.pose.orientation.x = 0;
   marker.pose.orientation.y = 0;
-  marker.pose.orientation.z = cos(asin((x0-x1)/(y0-y1))/2);
-  marker.pose.orientation.w = sin(asin((x0-x1)/(y0-y1))/2);
+  marker.pose.orientation.z = cos(atan((x0-x1)/(y0-y1))/2);
+  marker.pose.orientation.w = sin(atan((x0-x1)/(y0-y1))/2);
   marker.lifetime = ros::Duration();
   marker_pub.publish(marker);
 }
